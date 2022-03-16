@@ -3,10 +3,12 @@
   z-index: 1;
   background-color: var(--color-primary);
   border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 15px;
 }
 
 .header-container{
   display: flex;
+  justify-content: center;
 }
 
 .header__menu {
@@ -15,6 +17,43 @@
   margin-right: -81px; */
   float: right;
   padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  list-style: none;
+}
+
+.header__menu-item a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.header__search{
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  color: hsl(0deg 0% 20%);
+  border: none;
+  border-radius: 20px 0 0 20px;
+  margin: 3px 0 0 5px;
+  position: relative;
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+
+.header__submit{
+  height: 25px;
+  line-height: 25px;
+  position: relative;
+  float: left;
+  width: 50px;
+  background: url(../../../../../../Magna/src/assets/images/btn-search.png) no-repeat center center hsl(215deg 77% 62%);
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  margin-top: 3px;
+  text-indent: -99999px;
 }
 
 .header__nav-icon {

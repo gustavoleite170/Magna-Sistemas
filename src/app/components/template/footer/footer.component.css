@@ -1,1 +1,155 @@
-a{}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  list-style: none;
+}
+
+p{
+  font-size: 12.6px;
+  line-height: 1.42857143;
+}
+
+a{
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.footer__tabs-container {
+  display: flex;
+  padding: 0px 30px;
+}
+
+.footer__tab-panel{
+  display: none;
+}
+
+.footer__tab-panel.show{
+  display: block;
+}
+
+.footer__tab__container {
+  width: 100vw;
+  padding: 28px 0;
+  color: #fff;
+  background: #2d4f77;
+}
+
+.footer__tab-content {
+}
+
+.footer__tab-container {
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer__tab__images-container,
+.footer__information,
+.footer__form {
+  width: 50%;
+  padding: 0px 15px;
+}
+
+.footer__tab__images-container {
+  display: none;
+}
+
+.footer__tab__images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__tab__images a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__img {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.footer__img-hover {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.footer__information{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__ic-local{
+  margin-right: 12px;
+}
+
+.footer__information > h3,
+.footer__form > h3,
+.footer__socials{
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.4px;
+  line-height: 1.1;
+}
+
+.footer__see-map{
+  margin: 5.4px 0px;
+}
+
+.footer__see-map b{
+  font-weight: 700;
+}
+
+.footer__socials-wrapper{
+  display: flex;
+  gap: 7px;
+}
+
+.footer__form__textarea {
+  height: 115px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer__tab-container {
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer__tab-container {
+    width: 970px;
+  }
+
+  .footer__tab__images-container,
+  .footer__information,
+  .footer__form {
+    width: 33.33333%;
+    padding: 0px 15px;
+  }
+
+  .footer__tab__images-container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer__tab-container {
+    width: 1170px;
+  }
+}

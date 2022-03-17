@@ -58,8 +58,8 @@ div {
   background: #2d4f77;
 }
 
-.footer__city.selected  a,
-.footer__city:hover  a {
+.footer__city.selected a,
+.footer__city:hover a {
   color: #ededed;
 }
 
@@ -78,9 +78,6 @@ div {
   background: #2d4f77;
 }
 
-.footer__tab-content {
-}
-
 .footer__tab-container {
   display: flex;
   flex-direction: column;
@@ -88,6 +85,10 @@ div {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.footer__information-wrapper {
+  width: 100%;
 }
 
 .footer__information,
@@ -284,10 +285,9 @@ div {
     padding-top: 0;
   }
 
-  .footer__information,
+  .footer__information-wrapper,
   .footer__form {
     width: 50%;
-    padding: 0px 15px;
   }
 }
 
@@ -299,9 +299,12 @@ div {
   }
 
   .footer__tab__images-container,
-  .footer__information,
+  .footer__information-wrapper,
   .footer__form {
     width: 33.33333%;
+  }
+
+  .footer__tab__images-container {
     padding: 0px 15px;
   }
 

@@ -1,4 +1,12 @@
-.header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav.header {
+  max-width: 100vw;
+  box-sizing: border-box;
   margin: 0;
   z-index: 1;
   background-color: var(--color-header);
@@ -6,7 +14,9 @@
   padding: 15px;
 }
 
-.header-container{
+.header-container {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
@@ -15,7 +25,7 @@
   /* margin-top: 20px; */
   /* margin-right: -50px;
   margin-right: -81px; */
-  float: right;
+  /* float: right; */
   padding: 0;
   display: flex;
   align-items: center;
@@ -23,13 +33,13 @@
   list-style: none;
 }
 
-.header__menu-item a{
+.header__menu-item a {
   text-decoration: none;
   color: #ffffff;
   padding: 5px;
 }
 
-.header__search{
+.header__search {
   height: 25px;
   line-height: 25px;
   padding: 0 10px;
@@ -43,13 +53,14 @@
   text-align: center;
 }
 
-.header__submit{
+.header__submit {
   height: 25px;
   line-height: 25px;
   position: relative;
   float: left;
   width: 50px;
-  background: url(../../../../../../Magna/src/assets/images/btn-search.png) no-repeat center center hsl(215deg 77% 62%);
+  background: url(../../../../../../Magna/src/assets/images/btn-search.png)
+    no-repeat center center hsl(215deg 77% 62%);
   border: 0;
   border-radius: 0 20px 20px 0;
   margin-top: 3px;
@@ -80,11 +91,5 @@
 @media only screen and (max-width: 1076px) {
   .header__menu li a {
     font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 1199px) {
-  .header-container {
-    width: 100%;
   }
 }

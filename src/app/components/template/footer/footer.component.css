@@ -64,10 +64,13 @@ div {
 }
 
 .footer__tab-panel {
+  opacity: 0%;
   display: none;
+  transition: all 0.5s;
 }
 
-.footer__tab-panel.show {
+.footer__tab-panel.selected {
+  opacity: 100%;
   display: block;
 }
 

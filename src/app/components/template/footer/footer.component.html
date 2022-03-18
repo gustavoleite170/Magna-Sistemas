@@ -1,13 +1,31 @@
 <footer class="footer">
   <div class="footer__tabs-container">
     <ul class="footer__tabs">
-      <li role="presentation" class="footer__city selected">
+      <li
+        #saoPaulo
+        id="saoPaulo"
+        role="presentation"
+        class="footer__city selected"
+        (click)="selectTab($event, saoPaulo, saoPauloTab, brasilia, brasiliaTab, rioDeJaneiro, rioDeJaneiroTab)"
+      >
         <a href="#sao-paulo">São Paulo</a>
       </li>
-      <li role="presentation" class="footer__city">
+      <li
+        #brasilia
+        id="brasilia"
+        role="presentation"
+        class="footer__city"
+        (click)="selectTab($event, brasilia, brasiliaTab, saoPaulo, saoPauloTab, rioDeJaneiro, rioDeJaneiroTab)"
+      >
         <a href="#brasilia">Brasília</a>
       </li>
-      <li role="presentation" class="footer__city">
+      <li
+        #rioDeJaneiro
+        id="rioDeJaneiro"
+        role="presentation"
+        class="footer__city"
+        (click)="selectTab($event, rioDeJaneiro, rioDeJaneiroTab, saoPaulo, saoPauloTab, brasilia, brasiliaTab)"
+      >
         <a href="#rio-de-janeiro">Rio de Janeiro</a>
       </li>
     </ul>
@@ -16,7 +34,7 @@
   <div class="footer__tab__container">
     <div class="footer__tab-content">
       <!-- TAB SAO PAULO -->
-      <div id="sao-paulo" class="footer__tab-panel show">
+      <div #saoPauloTab id="sao-paulo" class="footer__tab-panel selected" (click)="selectTab($event, saoPaulo, saoPauloTab, brasilia, brasiliaTab, rioDeJaneiro, rioDeJaneiroTab)">
         <div class="footer__tab-container">
           <div class="footer__tab__images-container">
             <div class="footer__tab__images">
@@ -151,7 +169,7 @@
       </div>
       <!-- TAB SAO PAULO -->
       <!-- TAB BRASILIA -->
-      <div id="brasilia" class="footer__tab-panel">
+      <div #brasiliaTab id="brasilia" class="footer__tab-panel" (click)="selectTab($event, brasilia, brasiliaTab, saoPaulo, saoPauloTab, rioDeJaneiro, rioDeJaneiroTab)">
         <div class="footer__tab-container">
           <div class="footer__tab__images-container">
             <div class="footer__tab__images">
@@ -286,7 +304,7 @@
       </div>
       <!-- TAB BRASILIA -->
       <!-- TAB RJ -->
-      <div id="rio-de-janeiro" class="footer__tab-panel">
+      <div #rioDeJaneiroTab id="rio-de-janeiro" class="footer__tab-panel" (click)="selectTab($event, rioDeJaneiro, rioDeJaneiroTab, saoPaulo, saoPauloTab, brasilia, brasiliaTab)">
         <div class="footer__tab-container">
           <div class="footer__tab__images-container">
             <div class="footer__tab__images">
@@ -360,7 +378,7 @@
                 class="footer__ic-local"
               />Contato
             </h3>
-            <form id="footer__form-container">
+            <form class="footer__form-container">
               <input
                 class="footer__form__input"
                 type="text"

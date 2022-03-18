@@ -26,14 +26,14 @@ div {
 
 .footer__tabs {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
   padding: 50px 30px 0px;
 }
 
 .footer__city {
   height: 50px;
   line-height: 50px;
-  border-radius: 3px 3px 0 0;
+  border-radius: 0;
   position: relative;
   float: left;
   width: 100%;
@@ -42,7 +42,7 @@ div {
   font-size: 22px;
   padding: 0;
   margin: 0;
-  border: 0 !important;
+  border: 0.5px solid black;
   outline: 0 !important;
   cursor: pointer;
 
@@ -52,6 +52,7 @@ div {
 .footer__city a {
   color: #2d4f77;
   transition: all 0.5s ease;
+  font-size: 14px;
 }
 
 .footer__city.selected,
@@ -250,6 +251,53 @@ div {
   margin-bottom: 8px;
 }
 
+.footer__city {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #ededed;
+  text-align: center;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  border: 0 !important;
+  outline: 0 !important;
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 435px) {
+  .footer__tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 50px 30px 0px;
+  }
+
+  .footer__city {
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #ededed;
+    text-align: center;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+    outline: 0 !important;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+  }
+}
+
 @media only screen and (min-width: 540px) {
   .footer__copy-container {
     justify-content: space-between;
@@ -263,6 +311,10 @@ div {
 }
 
 @media only screen and (min-width: 768px) {
+  .footer__city a {
+    font-size: 22px;
+  }
+
   .footer__tab-container,
   .footer__copy-container,
   .footer__tabs {

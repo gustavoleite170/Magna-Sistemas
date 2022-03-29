@@ -65,7 +65,7 @@ p {
 .homepage__first__box-card p {
   font-size: 12.6px;
   padding: 0 12.6px;
-  height: 55px;
+  height: 65px;
 }
 
 .homepage__first__box-card a:nth-child(2) {
@@ -167,7 +167,7 @@ p {
 
 /* ==========THIRD-SECTION========== */
 
-.homepage__third-section-container{
+.homepage__third-section-container {
   background: var(--color-general);
 }
 
@@ -178,13 +178,12 @@ p {
   gap: 33px;
 }
 
-.homepage__third__box-container{
+.homepage__third__box-container {
   display: flex;
   margin: auto;
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 45px !important;
 }
 
 .homepage__third-section-container h2 {
@@ -218,6 +217,39 @@ p {
   border-radius: 4px 4px 0 0 !important;
 }
 
+.homepage__third__box-card h4 {
+  font-size: 18px;
+  height: 40px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 5px 0px 10px;
+}
+
+.homepage__third__box-card p {
+  font-size: 12.6px;
+  padding: 0 12.6px;
+  height: 65px;
+}
+
+.homepage__third__box-card a:nth-child(2) {
+  font-size: 11.2px;
+  display: inline-block;
+  margin: 0px 15px 15px;
+  padding: 5.6px 28px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  position: relative;
+  width: calc(100% - 25px);
+
+  transition: all 0.5s ease;
+}
+
+.homepage__third__box-card a:nth-child(2):hover {
+  color: #fff;
+  background: #5392e9;
+}
+
 /* ==========THIRD-SECTION========== */
 
 /* ==========RESPONSIVE========== */
@@ -245,15 +277,18 @@ p {
     width: 970px;
   }
 
-  .homepage__first__box-card p {
+  .homepage__first__box-card p,
+  .homepage__third__box-card p {
     height: 75px;
   }
 
-  .homepage__first__box-card h4 {
+  .homepage__first__box-card h4,
+  .homepage__third__box-card h4 {
     font-size: 16px;
   }
 
-  .homepage__first__card-container, .homepage__third__box-card {
+  .homepage__first__card-container,
+  .homepage__third__box-card {
     width: 212.5px;
   }
 
@@ -267,12 +302,14 @@ p {
     width: 1170px;
   }
 
-  .homepage__first__box-card h4 {
+  .homepage__first__box-card h4,
+  .homepage__third__box-card h4 {
     font-size: 18px;
   }
 
-  .homepage__first__card-container, .homepage__third__box-card {
-    width: 262.5px;
+  .homepage__first__card-container,
+  .homepage__third__box-card {
+    width: 253px;
   }
 }
 /* ==========RESPONSIVE========== */

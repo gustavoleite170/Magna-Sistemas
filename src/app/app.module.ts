@@ -1,3 +1,4 @@
+import { HomepageCarrousselModule } from './components/views/homepage-carroussel/homepage-carroussel.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +15,8 @@ import { HomepageComponent } from './components/views/homepage/homepage.componen
     HomepageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HomepageCarrousselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

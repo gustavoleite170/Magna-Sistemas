@@ -13,9 +13,28 @@ export class HomepageComponent implements OnInit {
     link: "https://www.magnasistemas.com.br/wps/wcm/connect/41b7b902-e96b-444b-9297-76040ec9de65/E-Book_Industria+4-0_MS.pdf?MOD=AJPERES&CVID=nVfJnFw",
     image: "https://www.magnasistemas.com.br/wps/wcm/connect/e2218fd9-5ea5-43a2-8cca-15ec84411aac/Captura+de+tela+2022-01-07+112354.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-e2218fd9-5ea5-43a2-8cca-15ec84411aac-leAWnzx",
     title: "Industria 4.0",
-    text: `Baixe o e-book e saiba os benefícios da Indústria 4.0 e como ela
-    impulsiona os processos da sua empresa.`,
-  }]
+    text: `Baixe o e-book e saiba os benefícios da Indústria 4.0 e como ela impulsiona os processos da sua empresa.`,
+    button: "BAIXE AQUI"
+  }, {
+    link: "https://www.magnasistemas.com.br/wps/portal/internet/novidades/detalhes/59d7973a-db66-4afd-9295-9a70337926c9",
+    image: "https://www.magnasistemas.com.br/wps/wcm/connect/f04f457d-c43b-44ac-b892-0202d97874b4/2021-IBM-Geography-Excellence-Award-Top-Brazil-Sell-Business-Partner-of-the-Year.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-f04f457d-c43b-44ac-b892-0202d97874b4-leAWnzx",
+    title: "“Top Brazil Sell Business Partner of the Year”",
+    text: `MAGNA SISTEMAS é a vencedora da premiação "2021 IBM Geography Excellence Award"`,
+    button: "SAIBA MAIS"
+  }, {
+    link: "https://www.magnasistemas.com.br/wps/portal/internet/parceiros/detalhes/1a064e67-f5ba-42db-9ad3-47336b7dd7eb",
+    image: "https://www.magnasistemas.com.br/wps/wcm/connect/7cf4c867-e74e-40f9-832d-3299da2333c7/Instagram+2.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-7cf4c867-e74e-40f9-832d-3299da2333c7-leAWnzx",
+    title: `Somos "Google Cloud Partner"!`,
+    text: `A MAGNA SISTEMAS tem o prazer de anunciar sua mais nova parceria de
+    sucesso!`,
+    button: "VEJA MAIS"
+  }, {
+    link: "https://www.magnasistemas.com.br/wps/portal/internet/novidades/detalhes/a718f11a-e3a0-49ea-88c9-84706f71eee5",
+    image: "https://www.magnasistemas.com.br/wps/wcm/connect/7d2b1bda-5255-48db-a9d5-788e5518e057/Beige+and+Green+Abstract+Illustration+Join+Our+Team+Announcement+LinkedIn+Post+%283%29.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-7d2b1bda-5255-48db-a9d5-788e5518e057-leAWnzx",
+    title: "Destaque do Ano do Anuário Informática",
+    text: `MAGNA SISTEMAS escolhida no segmento de mercado Integradores - Médio Porte.`,
+    button: "VEJA MAIS"
+  }, ]
 
   ngOnInit(): void {
   }

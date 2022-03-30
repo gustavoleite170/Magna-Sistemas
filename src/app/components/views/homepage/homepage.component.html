@@ -2,7 +2,7 @@
   <!-- First Section -->
 
   <section class="homepage__first-section-container max-width">
-    <div class="homepage__first__card-container">
+    <!-- <div class="homepage__first__card-container">
       <div class="homepage__first__box-card">
         <a
           href="https://www.magnasistemas.com.br/wps/wcm/connect/41b7b902-e96b-444b-9297-76040ec9de65/E-Book_Industria+4-0_MS.pdf?MOD=AJPERES&CVID=nVfJnFw"
@@ -102,6 +102,30 @@
           href="https://www.magnasistemas.com.br/wps/portal/internet/novidades/detalhes/a718f11a-e3a0-49ea-88c9-84706f71eee5"
           target="_blank"
           >VEJA MAIS</a
+        >
+      </div>
+    </div> -->
+    <div *ngFor="let n of sec1" class="homepage__first__card-container">
+      <div class="homepage__first__box-card">
+        <a
+          href="https://www.magnasistemas.com.br/wps/wcm/connect/41b7b902-e96b-444b-9297-76040ec9de65/E-Book_Industria+4-0_MS.pdf?MOD=AJPERES&CVID=nVfJnFw"
+          target="_blank"
+        >
+          <img
+            src="https://www.magnasistemas.com.br/wps/wcm/connect/e2218fd9-5ea5-43a2-8cca-15ec84411aac/Captura+de+tela+2022-01-07+112354.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-e2218fd9-5ea5-43a2-8cca-15ec84411aac-leAWnzx"
+            alt="{{ n.title }}"
+            class="homepage__first-img"
+          />
+          <h4>{{ n.title }}</h4>
+          <p>
+            {{ n.text }}
+          </p>
+        </a>
+
+        <a
+          href="https://www.magnasistemas.com.br/wps/wcm/connect/41b7b902-e96b-444b-9297-76040ec9de65/E-Book_Industria+4-0_MS.pdf?MOD=AJPERES&CVID=nVfJnFw"
+          target="_blank"
+          >BAIXE AQUI</a
         >
       </div>
     </div>

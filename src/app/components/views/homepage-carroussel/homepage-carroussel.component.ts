@@ -35,87 +35,202 @@ SwiperCore.use([
 @Component({
   selector: 'app-homepage-carroussel',
   template: `
-    <div class="testimonials__carroussel">
+    <div class="homepage-carroussel">
       <swiper
         [slidesPerView]="1"
-        [spaceBetween]="30"
-        [pagination]="{ clickable: true }"
         [loop]="true"
         [keyboard]="true"
       >
         <ng-template swiperSlide>
-          <div class="testimonials__carroussel__slides">
-            <div class="testimonials__carroussel__slides__testimony">
-              <div class="testimonials__carroussel__slides__testimony-text">
-                Depois de muitas frustrações com propostas limitadas e complexas
-                nos deparamos com a solução do Google for Education por meio da
-                Inicie Transformação Digital.
-              </div>
-              <div class="testimonials__carroussel__slides__author">
-                <img
-                  src="https://inicie.digital/wp-content/uploads/2021/05/Captura-de-Tela-2021-05-26-às-19.48.58-150x150.png"
-                  alt="Admir Moreli"
-                  class="testimonials__carroussel__slides__author-photo"
-                />
-                <div class="testimonials__carroussel__slides__author-info">
-                  <div class="testimonials__carroussel__slides__author-name">
-                    Admir Moreli
-                  </div>
-                  <div
-                    class="testimonials__carroussel__slides__author-location"
-                  >
-                    Colégio Rio Branco Campinas - SP
-                  </div>
-                </div>
-              </div>
-              <div class="testimonials__carroussel__slides__quotes">
-                <img
-                  src="../../../../assets/quote.png"
-                  alt="Quotes"
-                  class="testimonials__carroussel__slides__quotes-mark"
-                />
-              </div>
-            </div>
-          </div>
+          <div class="homepage__slide" data-thumb-alt="">
+	          <img src="https://www.magnasistemas.com.br/wps/wcm/connect/f2f0df0d-a1ec-4fdf-abeb-b9aa4ade3641/home2019MS.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-f2f0df0d-a1ec-4fdf-abeb-b9aa4ade3641-leAWnzx" class="homepage__slide-img">
+		        <div class="homepage__slide-text">
+			        <div class="homepage__slide-text-container">
+					      <h1>NA JORNADA DA TRANSFORMAÇÃO DIGITAL</h1>
+					      <h2>É PRECISO IR ALÉM DA INOVAÇÃO</h2>
+					      <a href="\internet\empresa">CONHEÇA</a>
+			        </div>
+		        </div>
+	        </div>
         </ng-template>
-
         <ng-template swiperSlide>
-          <div class="testimonials__carroussel__slides">
-            <div class="testimonials__carroussel__slides__testimony">
-              <div class="testimonials__carroussel__slides__testimony-text">
-                Vejo que a Inicie está fazendo um ótimo trabalho em capacitar
-                todos nas instituições que atuam. Administrativo, educadores e
-                até mesmo pais e estudantes estão envolvidos.
-              </div>
-              <div class="testimonials__carroussel__slides__author">
-                <img
-                  src="https://inicie.digital/wp-content/uploads/2021/02/Esther_Wojcicki_cropped-e1622068870716-150x150.jpeg"
-                  alt="Esther Wojcicki"
-                  class="testimonials__carroussel__slides__author-photo"
-                />
-                <div class="testimonials__carroussel__slides__author-info">
-                  <div class="testimonials__carroussel__slides__author-name">
-                    Esther Wojcicki
-                  </div>
-                  <div
-                    class="testimonials__carroussel__slides__author-location"
-                  >
-                    Escola Secundária de Palo Alto - EUA
-                  </div>
-                </div>
-              </div>
-              <div class="testimonials__carroussel__slides__quotes">
-                <img
-                  src="../../../../assets/quote.png"
-                  alt="Quotes"
-                  class="testimonials__carroussel__slides__quotes-mark"
-                />
-              </div>
-            </div>
-          </div>
+          <div class="homepage__slide" data-thumb-alt="">
+	          <img src="https://www.magnasistemas.com.br/wps/wcm/connect/b534261d-6501-435e-b950-5c3cdfbf372e/Solution+%287%29.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-b534261d-6501-435e-b950-5c3cdfbf372e-leAWnzx">
+		        <div class="homepage__slide-text">
+			        <div class="homepage__slide-text-container">
+					      <h1>Soluções</h1>
+					      <h2>A tecnologia da informação à serviço do seu negócio!</h2>
+					      <a href="\internet\empresa">CONHEÇA</a>
+			        </div>
+		        </div>
+	        </div>
         </ng-template>
+      </swiper>
   `,
-  styles: [
+  styles: [`
+  img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  h1, h2, a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+
+  a{
+    position: relative;
+    top: 12px;
+    padding: 3px 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    font-size: 8.6px;
+
+    transition: all 0.5s ease;
+  }
+
+  a:hover{
+    background: #ffffff;
+    color: #193a68;
+  }
+
+  h1{
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  h2{
+    font-size: 10.6px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .homepage-carroussel{
+    overflow-x: hidden;
+  }
+
+  .homepage-slide{
+    position: relative;
+    width: 100vw;
+    margin-right: 0px; 
+    float: left; 
+    display: block;
+    overflow-y: hidden;
+  }
+
+  .homepage__slide-text{
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: calc(50% - 130px);
+    max-width: 280px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    img{
+      height: 300px;
+    }
+    
+    h1{
+      font-size: 28px;
+    }
+
+    h2{
+      font-size: 12px;
+    }
+
+    a{
+      top: 21px;
+      padding: 5.6px 14px;
+      border-radius: 3px;
+      font-size: 11px;
+    }
+
+    .homepage__slide-text{
+      max-width: 456px;
+      left: calc(50% - 228px);
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    img{
+      height: 400px;
+    }
+
+    h1{
+      font-size: 48px;
+    }
+
+    h2{
+      font-size: 16px;
+    }
+
+    a{
+      top: 42px;
+      font-size: 12px;
+      padding: 7.466667px 18.6666667px;
+      border-radius: 4px;
+    }
+
+    .homepage__slide-text{
+      max-width: 782px;
+      left: calc(50% - 391px);
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    img{
+      height: 500px;
+    }
+
+    h1{
+      font-size: 56px;
+    }
+
+    h2{
+      font-size: 20px;
+    }
+
+    a{
+      top: 42px;
+      font-size: 13px;
+      padding: 9.3333333px 23.333333px;
+      border-radius: 4px;
+    }
+
+    .homepage__slide-text{
+      max-width: 912px;
+      left: calc(50% - 456px);
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    h1{
+      font-size: 70px;
+    }
+
+    h2{
+      font-size: 25px;
+    }
+
+    a{
+      top: 42px;
+      font-size: 14px;
+      padding: 11.2px 28px;
+      border-radius: 4px;
+    }
+
+    .homepage__slide-text{
+      max-width: 1140px;
+      left: calc(50% - 570px);
+      top: 35%;
+    }
+  }
+  `
   ]
 })
 
@@ -134,13 +249,12 @@ export class HomepageCarrousselComponent implements OnInit {
   }
 
   indexNumber = 1;
-  slidesPerView: number = 1;
+  slidesPerView: number = 6;
   pagination: any = false;
 
   keyboard= {
     enabled: true,
     onlyInViewport: false,
   }
-  slidesPerGroup = 0;
 
 }
